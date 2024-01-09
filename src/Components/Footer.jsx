@@ -1,6 +1,7 @@
 // Footer.js
 
 import '../css/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,8 +10,9 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="logo"><img src="/src/assets/logo.svg" alt="logo" /></div>
-            <p>Email: info@example.com</p>
-            <p>Phone: +1 123 456 7890</p>
+            <p><Link to="mailto: mofelengmokgope@gmail.com">Email: mofelengmokgope@gmail.com</Link></p>
+            <p><Link to="tel: 0695888059">Phone: +27 69 588 8059</Link></p>
+            
           </div>
         </div>
         <div className="footer-bottom">

@@ -46,10 +46,19 @@
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 80px;
+      top: 58px;
       left: 0;
       width: 100%;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
       background-color: #333;
+
+    }
+
+    .btn_primary {
+      background-color: #333;
+      padding: 0;
     }
   
     .nav-links.mobile-menu-open {

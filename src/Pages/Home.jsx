@@ -31,12 +31,24 @@ function Home() {
           <p className="paragraph">Here is the tech stack I use to craft blazing fast websites.</p>
           <div className="tech_stack_container">
             <div className="tech_stack">
-              <img src={stack_folder_prefix+'html_white'+'.svg'} alt="html logo" />
-              <img src={stack_folder_prefix+'css_white'+'.svg'} alt="css logo" />
-              <img src={stack_folder_prefix+'js'+'.svg'} alt="js logo" />
-              <img src={stack_folder_prefix+'react'+'.svg'} alt="react js logo" />
-              <img src={stack_folder_prefix+'node_white'+'.svg'} alt="node js logo" />
-              <img src={stack_folder_prefix+'github_white'+'.svg'} alt="github logo" />
+              <div className="img_container">
+                                <img src={stack_folder_prefix+'html_white'+'.svg'} alt="html logo" />
+              </div>
+              <div className="img_container">
+                              <img src={stack_folder_prefix+'css_white'+'.svg'} alt="css logo" />                
+              </div>
+              <div className="img_container">
+                              <img src={stack_folder_prefix+'js'+'.svg'} alt="js logo" />               
+              </div>
+              <div className="img_container">
+                              <img src={stack_folder_prefix+'react'+'.svg'} alt="react js logo" />                
+              </div>
+              <div className="img_container">
+                              <img src={stack_folder_prefix+'node_white'+'.svg'} alt="node js logo" />                
+              </div>
+              <div className="img_container">
+                              <img src={stack_folder_prefix+'github_white'+'.svg'} alt="github logo" />               
+              </div>
             </div>
           </div>
         </div>

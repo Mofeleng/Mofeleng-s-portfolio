@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.container {
+    max-width: 1204px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    padding: 10px 15px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 7px;
+}
+
+.btn_primary {
+    background-color: #1E1E1E;
+}

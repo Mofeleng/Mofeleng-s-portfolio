@@ -7,6 +7,7 @@ body {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden !important;
+    max-width: 100% !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -114,7 +115,8 @@ textarea {
 }
 form {
     width: 80%;
-    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 60px;
 }
 form button {
@@ -124,4 +126,18 @@ form button {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (max-width: 770px) {
+    form {
+        width: 100%;
+        margin-left: 0;
+        margin-left: 0;
+        
+
+    }
+    .contact_form {
+        text-align: start;
+        padding-right: 20px;
+    }
 }

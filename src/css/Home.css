@@ -16,6 +16,8 @@
 
 .hero_content_wrapper img {
     border-radius: 100%;
+    width: 200px;
+    height: 200px;
 }
 
 .tech_stack_container {
@@ -72,16 +74,43 @@
     .tech_stack {
         grid-template-columns: 4fr 4fr 4fr;
     }
+    .heading {
+        font-size: 36px;
+    }
 }
 
 @media screen and (max-width: 660px) {
     .tech_stack {
         grid-template-columns: 6fr 6fr;
     }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .heading {
+        font-size: 32px;
+    }
+    .hero_content_wrapper img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 460px) {
     .tech_stack {
         grid-template-columns: 12fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero_content_wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+    .heading {
+        font-size: 28px;
     }
 }

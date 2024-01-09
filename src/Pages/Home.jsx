@@ -51,28 +51,32 @@ function Home() {
           </p>
 
           <div className="projects_container">
-
-            <div className="project one">
-              <img src="/src/assets/projects/hero_parawild.jpg" alt="Cover photo"/>
-              <div className="contents">
-                <span>Web development.</span>
-                <h4 className="heading_smaller">Parawild Edu Capture</h4>
-                <p className="paragraph">
-                A responsive website for a wildlife managementcompany based in Hoedspruit
-                </p>
+            <Link to={'/'}>
+              <div className="project one">
+                <img src="/src/assets/projects/hero_parawild.jpg" alt="Cover photo"/>
+                <div className="contents">
+                  <span>Web development.</span>
+                  <h4 className="heading_smaller">Parawild Edu Capture</h4>
+                  <p className="paragraph">
+                  A responsive website for a wildlife managementcompany based in Hoedspruit
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="project two">
-              <img src="/src/assets/projects/hero_bold_blossoms.jpg" alt="Cover photo"/>
-              <div className="contents">
-                <span>Web development.</span>
-                <h4 className="heading_smaller">Bold Blossoms</h4>
-                <p className="paragraph">
-                A responsive website for a Pageantry website that hosts yearly pageants
-                </p>
+            </Link>
+            
+            <Link to={'/'}>
+              <div className="project two">
+                <img src="/src/assets/projects/hero_bold_blossoms.jpg" alt="Cover photo"/>
+                <div className="contents">
+                  <span>Web development.</span>
+                  <h4 className="heading_smaller">Bold Blossoms</h4>
+                  <p className="paragraph">
+                  A responsive website for a Pageantry website that hosts yearly pageants
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
+            
 
           </div>
 

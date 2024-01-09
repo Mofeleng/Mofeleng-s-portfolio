@@ -21,7 +21,11 @@
 .tech_stack_container {
     margin-top: 80px;
 }
-
+.tech_stack {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 10px;
+}
 .projects_container {
     margin-top: 80px;
     text-align: start;
@@ -37,6 +41,13 @@
 }
 .project {
     max-width: 100% !important;
+    transition: 200ms;
+    padding-bottom:5px ;
+}
+
+.project:hover {
+    
+    padding-bottom: 10px;
 }
 
 .one {

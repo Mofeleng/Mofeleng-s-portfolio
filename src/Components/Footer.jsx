@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h2>Contact Us</h2>
+            <div className="logo"><img src="/src/assets/logo.svg" alt="logo" /></div>
             <p>Email: info@example.com</p>
             <p>Phone: +1 123 456 7890</p>
           </div>

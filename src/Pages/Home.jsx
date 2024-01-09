@@ -41,6 +41,43 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section id="projects" className="projects">
+        <div className="container centered">
+
+          <h2 className="heading_small">Latest projects</h2>
+          <p className="paragraph">
+          Some of the projects I have been working on recently. Feel free to read more on them.
+          </p>
+
+          <div className="projects_container">
+
+            <div className="project one">
+              <img src="/src/assets/projects/hero_parawild.jpg" alt="Cover photo"/>
+              <div className="contents">
+                <span>Web development.</span>
+                <h4 className="heading_smaller">Parawild Edu Capture</h4>
+                <p className="paragraph">
+                A responsive website for a wildlife managementcompany based in Hoedspruit
+                </p>
+              </div>
+            </div>
+
+            <div className="project two">
+              <img src="/src/assets/projects/hero_bold_blossoms.jpg" alt="Cover photo"/>
+              <div className="contents">
+                <span>Web development.</span>
+                <h4 className="heading_smaller">Bold Blossoms</h4>
+                <p className="paragraph">
+                A responsive website for a Pageantry website that hosts yearly pageants
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
     
     </>
   )

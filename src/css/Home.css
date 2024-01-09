@@ -21,3 +21,31 @@
 .tech_stack_container {
     margin-top: 80px;
 }
+
+.projects_container {
+    margin-top: 80px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px;
+}
+.project img {
+    max-width: 100% !important;
+    max-height: 380px;
+    object-fit: cover;
+    min-height: 357px;
+}
+.project {
+    max-width: 100% !important;
+}
+
+.one {
+    background: #7000FF;
+}
+
+.two {
+    background-color: #FF0000;
+}
+.contents {
+    padding-left: 10px;
+}

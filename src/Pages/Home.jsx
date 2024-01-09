@@ -78,6 +78,24 @@ function Home() {
 
         </div>
       </section>
+
+      <section id="contact" className="contact">
+        <div className="container centered">
+          <h2 className="heading_small">Get in touch</h2>
+          <p className="paragraph">
+            Want to collaborate on something great? Feel free to send me a message below :)
+          </p>
+
+          <div className="contact_form">
+            <form>
+              <input type="text" placeholder='Your name'/>
+              <input type="text" placeholder='Your email'/>
+              <textarea placeholder={`Hey. I'd like us to work together on...`}></textarea>
+              <button className="btn btn_black">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     
     </>
   )

@@ -3,6 +3,9 @@ import '../css/Home.css'
 import { Link } from 'react-router-dom'
 
 function Home() {
+  const assets_folder_prefix = "/src/assets/"
+  const stack_folder_prefix = "/src/assets/stack/"
+
   return (
     <>
       <section id="hero" className="hero">
@@ -22,7 +25,22 @@ function Home() {
         </div>
       </section>
 
-      
+      <section id="skills" className="skills">
+        <div className="container centered">
+          <h2 className="heading_small">My skills</h2>
+          <p className="paragraph">Here is the tech stack I use to craft blazing fast websites.</p>
+          <div className="tech_stack_container">
+            <div className="tech_stack">
+              <img src={stack_folder_prefix+'html_white'+'.svg'} alt="html logo" />
+              <img src={stack_folder_prefix+'css_white'+'.svg'} alt="css logo" />
+              <img src={stack_folder_prefix+'js'+'.svg'} alt="js logo" />
+              <img src={stack_folder_prefix+'react'+'.svg'} alt="react js logo" />
+              <img src={stack_folder_prefix+'node_white'+'.svg'} alt="node js logo" />
+              <img src={stack_folder_prefix+'github_white'+'.svg'} alt="github logo" />
+            </div>
+          </div>
+        </div>
+      </section>
     
     </>
   )

@@ -68,5 +68,8 @@
     .hamburger-menu {
       display: block;
     }
+    .logo img {
+      width: 60%;
+    }
   }
   

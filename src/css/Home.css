@@ -28,6 +28,14 @@
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
     gap: 10px;
 }
+.tech_stack img {
+    transition: 200ms;
+    cursor:crosshair;
+}
+.tech_stack img:hover {
+    filter: invert(100%);
+    padding: 20px;
+}
 .projects_container {
     margin-top: 80px;
     text-align: start;

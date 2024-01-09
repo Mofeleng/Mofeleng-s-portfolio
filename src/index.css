@@ -38,12 +38,24 @@ h1, h2, h3, h4, h5 {
 
 .btn_primary {
     background-color: #1E1E1E;
+    transition: 200ms;
 }
 .btn_black {
     background-color: black;
+    transition: 200ms;
+}
+.btn_black:hover {
+    background-color: #ff0000;
+}
+.btn_primary:hover {
+    background-color: #7000FF;
 }
 .btn_accent {
     background-color: #343434;
+    transition: 200ms;
+}
+.btn_accent:hover {
+    background-color: #000;
 }
 .btn_rounded {
     border-radius: 50px;

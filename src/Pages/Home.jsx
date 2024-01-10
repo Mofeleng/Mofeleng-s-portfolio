@@ -6,7 +6,7 @@ import ProjectsGrid from '../Components/ProjectsGrid'
 
 function Home() {
   const assets_folder_prefix = "/src/assets/"
-  const stack_folder_prefix = "/src/assets/stack/"
+  const stack_folder_prefix = "/stack/"
 
   return (
     <>

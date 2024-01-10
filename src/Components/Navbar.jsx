@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="logo">
             <Link to="/">
-              <img src="/src/assets/logo.svg" alt="Logo" />
+              <img src="logo.svg" alt="Logo" />
             </Link>
           </div>
           <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>

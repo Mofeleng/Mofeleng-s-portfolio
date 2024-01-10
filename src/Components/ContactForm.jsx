@@ -4,8 +4,13 @@ import '../css/ContactForm.css';
 
 function ContactForm() {
     const [ name, setName ] = useState('');
+    const [ nameError, setNameError ] = useState(null);
+
     const [ email, setEmail ] = useState('');
+    const [ emailError, setEmailError ] = useState(null);
+
     const [ message, setMessage ] = useState('');
+    const [ messageError, setMessageError ] = useState(null);
 
     const [ isSuccess, setIsSuccess ] = useState(null);
     const [ error, setError ] = useState(null);
@@ -16,6 +21,16 @@ function ContactForm() {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!name) {
+            return setNameError("Please fill in your name");
+        }
+        if (!email) {
+            return setEmailError("Please fill in your email");
+        }
+        if (!message) {
+            return setMessageError("Please write a message.")
+        }
 
         const templateParams = {
             reply_to: email,
@@ -53,18 +68,24 @@ function ContactForm() {
                 <input type="text" placeholder='Your name' value={name}
                 onChange={(e) => {
                     setName(e.target.value);
+                    setNameError(null);
                 }}
                 />
+                <span className="text_red">{nameError}</span>
                 <input type="text" placeholder='Your email' value={email}
                     onChange={(e) => {
                         setEmail(e.target.value);
+                        setEmailError(null);
                     }}
                 />
+                <span className="text_red">{emailError}</span>
                 <textarea placeholder={`Hey. I'd like us to work together on...`} value={message}
                     onChange={(e) => {
                         setMessage(e.target.value);
+                        setEmailError(null);
                     }}
                 ></textarea>
+                <span className="text_red">{messageError}</span>
                 <button className="btn btn_black" onClick={(e) => sendEmail(e)}>Send message</button>
             </>
         ):null}

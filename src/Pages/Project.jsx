@@ -116,7 +116,7 @@ function Project() {
                             <div className="content" dangerouslySetInnerHTML={{ __html: project.content.html }}></div>
 
                             <p className='mg_top_2'>
-                                <Link to={project.link} target='blank'>View project </Link>
+                                <Link to={project.link} target='blank'>View project &rarr;</Link>
                             </p>
                         </div>
                     </div>
@@ -130,7 +130,10 @@ function Project() {
                 <p className="paragraph">
                     Want to collaborate on something great? Feel free to send me a message below :)
                 </p>
-                <ContactForm />
+                <div className="contact_form">
+                    <ContactForm />
+                </div>
+                
             </div>
         </section>
     </>

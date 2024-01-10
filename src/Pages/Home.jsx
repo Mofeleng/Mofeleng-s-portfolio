@@ -18,8 +18,8 @@ function Home() {
             My name is Mofeleng Shadow Mokgope, I am a fullstack web developer and a final year BCom student. I help brands build websites that make them memorable.
             </p>
             <div className="buttons">
-              <Link className='btn btn_wider btn_accent btn_rounded'>My Github</Link>
-              <Link className='btn btn_wider btn_black btn_rounded'>My Projects</Link>
+              <Link to={'https://github.com/Mofeleng'} target='blank' className='btn btn_wider btn_accent btn_rounded'>My Github</Link>
+              <Link to={'/projects'} className='btn btn_wider btn_black btn_rounded'>My Projects</Link>
             </div>
           </div>
         </div>

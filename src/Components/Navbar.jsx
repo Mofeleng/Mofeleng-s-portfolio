@@ -17,7 +17,7 @@ const Navbar = () => {
             <img src="/src/assets/logo.svg" alt="Logo" />
           </div>
           <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-            <li><Link to="#">My projects</Link></li>
+            <li><Link to="/projects">My projects</Link></li>
             <li><a href="/#contact" className='btn btn_primary'>Hire Me.</a></li>
           </ul>
           <div className="hamburger-menu" onClick={handleMobileMenuToggle}>

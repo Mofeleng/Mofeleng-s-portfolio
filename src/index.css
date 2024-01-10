@@ -127,6 +127,9 @@ textarea {
     margin-top: 20px;
     padding: 0 10px;
 }
+button {
+    cursor: pointer;
+}
 form {
     width: 80%;
     margin-left: 10%;

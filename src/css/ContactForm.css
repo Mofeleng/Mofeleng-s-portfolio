@@ -1,6 +1,7 @@
 .form_output {
     padding: 30px 15px;
     text-align: center;
+    cursor: pointer;
 }
 
 .success {

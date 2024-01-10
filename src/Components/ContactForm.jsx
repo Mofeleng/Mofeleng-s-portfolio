@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import '../css/ContactForm.css';
+import useEmailValidate from '../Hooks/useEmailValidate';
 
 function ContactForm() {
     const [ name, setName ] = useState('');
@@ -29,7 +30,11 @@ function ContactForm() {
             return setEmailError("Please fill in your email");
         }
         if (!message) {
-            return setMessageError("Please write a message.")
+            return setMessageError("Please write a message.");
+        }
+
+        if (!useEmailValidate(email)) {
+            return setEmailError("Please use a valid email address");
         }
 
         const templateParams = {
@@ -63,7 +68,7 @@ function ContactForm() {
   return (
 
     <form>
-        {!isSuccess || !error ? (
+        {!isSuccess && !error ? (
             <>
                 <input type="text" placeholder='Your name' value={name}
                 onChange={(e) => {
@@ -82,13 +87,13 @@ function ContactForm() {
                 <textarea placeholder={`Hey. I'd like us to work together on...`} value={message}
                     onChange={(e) => {
                         setMessage(e.target.value);
-                        setEmailError(null);
+                        setMessageError(null);
                     }}
                 ></textarea>
-                <span className="text_red">{messageError}</span>
+                <span className="text_red">{messageError}</span><br></br>
                 <button className="btn btn_black" onClick={(e) => sendEmail(e)}>Send message</button>
             </>
-        ):null}
+        ):(<></>)}
         
         {isSuccess ? (
             <div className="form_output success" onClick={resetForm}>

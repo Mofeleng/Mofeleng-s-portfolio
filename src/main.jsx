@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import Layout from './Layout'
 import Projects from './Pages/Projects'
+import Project from './Pages/Project'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/projects' element={
           <Layout>
             <Projects />
+          </Layout>
+        } />
+
+        <Route path='/project/:slug' element={
+          <Layout>
+            <Project />
           </Layout>
         } />
       </Routes>

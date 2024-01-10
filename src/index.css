@@ -102,7 +102,9 @@ section {
 .centered {
     text-align: center;
 }
-
+.start {
+    text-align: start;
+}
 input {
     display: block;
     width: 100%;

@@ -13,29 +13,6 @@ function ProjectsList() {
     try {
       const graphqlClient = new GraphQLClient(ENDPOINT);
 
-      /*const fetchProjects = gql`
-        query GetProjects {
-          projects {
-            id
-            name
-            preview
-            slug
-            type
-            date
-            client
-            content {
-              html
-            }
-            coverPhoto {
-              url
-            }
-            languages {
-              language
-            }
-          }
-        }
-      `;*/
-
       const fetchProjects = gql`
         query GetProjects {
           projects {

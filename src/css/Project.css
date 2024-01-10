@@ -1,0 +1,21 @@
+
+.project_details_grid {
+    display: grid;
+    grid-template-columns: 20% 60%;
+    gap: 20%;
+}
+
+.left_information .info_block {
+    margin-bottom: 60px;
+}
+.paragraph_info {
+    color: gray;
+}
+
+.content {
+    color: gray;
+}
+
+.mg_top_2 {
+    margin-top: 40px;
+}

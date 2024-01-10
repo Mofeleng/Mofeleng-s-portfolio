@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Home.css'
 import { Link } from 'react-router-dom'
 import ContactForm from '../Components/ContactForm'
+import ProjectsGrid from '../Components/ProjectsGrid'
 
 function Home() {
   const assets_folder_prefix = "/src/assets/"
@@ -63,35 +64,7 @@ function Home() {
           Some of the projects I have been working on recently. Feel free to read more on them.
           </p>
 
-          <div className="projects_container">
-            <Link to={'/'}>
-              <div className="project one">
-                <img src="/src/assets/projects/hero_parawild.jpg" alt="Cover photo"/>
-                <div className="contents">
-                  <span>Web development.</span>
-                  <h4 className="heading_smaller">Parawild Edu Capture</h4>
-                  <p className="paragraph">
-                  A responsive website for a wildlife managementcompany based in Hoedspruit
-                  </p>
-                </div>
-              </div>
-            </Link>
-            
-            <Link to={'/'}>
-              <div className="project two">
-                <img src="/src/assets/projects/hero_bold_blossoms.jpg" alt="Cover photo"/>
-                <div className="contents">
-                  <span>Web development.</span>
-                  <h4 className="heading_smaller">Bold Blossoms</h4>
-                  <p className="paragraph">
-                  A responsive website for a Pageantry website that hosts yearly pageants
-                  </p>
-                </div>
-              </div>
-            </Link>
-            
-
-          </div>
+          <ProjectsGrid />
 
         </div>
       </section>

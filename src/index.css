@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5 {
     border-radius: 50px;
 }
 
+li a:hover,
+.btn:hover {
+    text-decoration: underline;
+}
 
 .label {
     text-transform: uppercase;

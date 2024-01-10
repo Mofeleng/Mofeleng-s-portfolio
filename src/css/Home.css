@@ -67,6 +67,13 @@
 .two {
     background-color: #FF0000;
 }
+.three {
+    background-color: lawngreen;
+}
+
+.four {
+    background-color: orangered;
+}
 .contents {
     padding-left: 10px;
 }

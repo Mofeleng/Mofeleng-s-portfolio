@@ -20,7 +20,7 @@ const Navbar = () => {
           </div>
           <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
             <li><Link to="/projects">My projects</Link></li>
-            <li><a href="/#contact" className='btn btn_primary'>Hire Me.</a></li>
+            <li><a href="/#contact" className='btn btn_primary'>Get in touch.</a></li>
           </ul>
           <div className="hamburger-menu" onClick={handleMobileMenuToggle}>
             <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>

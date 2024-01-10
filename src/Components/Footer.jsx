@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="logo"><img src="/src/assets/logo.svg" alt="logo" /></div>
             <p><Link to="mailto: mofelengmokgope@gmail.com">Email: mofelengmokgope@gmail.com</Link></p>
             <p><Link to="tel: 0695888059">Phone: +27 69 588 8059</Link></p>
-            <p>Made with ❤️.</p>
+            <p>Made with ❤️ from my living room(aka office) XD.</p>
           </div>
         </div>
         <div className="footer-bottom">

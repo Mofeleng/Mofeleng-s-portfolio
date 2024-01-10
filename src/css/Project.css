@@ -24,6 +24,9 @@
     height: fit-content;
     object-fit: cover;
 }
+.under:hover {
+    text-decoration: underline;
+}
 @media screen and (max-width: 850px) {
     .project_details_grid {
         grid-template-columns: 100%;

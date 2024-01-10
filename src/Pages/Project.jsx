@@ -112,11 +112,11 @@ function Project() {
                             </div>
                         </div>
                         <div className="right_information">
-                            <h2 className="heading_small">How we did it.</h2>
+                            <h2 className="heading_small">How I did it.</h2>
                             <div className="content" dangerouslySetInnerHTML={{ __html: project.content.html }}></div>
 
                             <p className='mg_top_2'>
-                                <Link to={project.link} target='blank'>View project &rarr;</Link>
+                                <Link to={project.link} target='blank' className='under'>View project &rarr;</Link>
                             </p>
                         </div>
                     </div>

@@ -28,12 +28,24 @@
     background-color: purple;
 }
 
+.nodejs {
+    background-color: green;
+}
+
 .text_link {
     color: blue;
 }
 
-a:hover {
+.project_main a:hover {
     text-decoration: underline;
+}
+
+.more_info {
+    display: flex;
+    gap: 10px;
+}
+.more_info .type {
+    margin: 0;
 }
 
 @media screen and (max-width: 590px) {
@@ -44,5 +56,17 @@ a:hover {
     h2 .type {
         margin-left: 0;
         width: fit-content;
+    }
+    .more_info {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .more_info {
+        grid-template-columns: auto auto auto;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Home.css'
 import { Link } from 'react-router-dom'
+import ContactForm from '../Components/ContactForm'
 
 function Home() {
   const assets_folder_prefix = "/src/assets/"
@@ -103,12 +104,7 @@ function Home() {
           </p>
 
           <div className="contact_form">
-            <form>
-              <input type="text" placeholder='Your name'/>
-              <input type="text" placeholder='Your email'/>
-              <textarea placeholder={`Hey. I'd like us to work together on...`}></textarea>
-              <button className="btn btn_black">Send message</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

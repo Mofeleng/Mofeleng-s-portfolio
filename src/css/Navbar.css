@@ -39,7 +39,9 @@
     margin: 5px 0;
     transition: 0.4s;
   }
-  
+  .logo img {
+    width: 70%;
+  }
   /* Media Query for Small Screens */
   @media screen and (max-width: 768px) {
     .nav-links {

@@ -1,12 +1,84 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import '../css/ContactForm.css';
 
 function ContactForm() {
+    const [ name, setName ] = useState('');
+    const [ email, setEmail ] = useState('');
+    const [ message, setMessage ] = useState('');
+
+    const [ isSuccess, setIsSuccess ] = useState(null);
+    const [ error, setError ] = useState(null);
+
+    const SERVICEID = import.meta.env.VITE_EMAILJS_SERVICEID;
+    const TEMPLATEID = import.meta.env.VITE_EMAILJS_TEMPLATEID;
+    const PUBLICKEY = import.meta.env.VITE_EMAILJS_PUBLICKEY;
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        const templateParams = {
+            reply_to: email,
+            from_name: name,
+            message: message
+        };
+        
+        emailjs.send(SERVICEID,TEMPLATEID, templateParams, PUBLICKEY)
+            .then((response) => {
+               setIsSuccess(true);
+               setError(null);
+            }, (err) => {
+               setError(true);
+               setIsSuccess(null);
+            });
+
+    }
+
+    const resetFormResponseState = () => {
+        setIsSuccess(null);
+        setError(null);
+    }
+
+    const resetForm = () => {
+        resetFormResponseState();
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
   return (
+
     <form>
-        <input type="text" placeholder='Your name'/>
-        <input type="text" placeholder='Your email'/>
-        <textarea placeholder={`Hey. I'd like us to work together on...`}></textarea>
-        <button className="btn btn_black">Send message</button>
+        {!isSuccess || !error ? (
+            <>
+                <input type="text" placeholder='Your name' value={name}
+                onChange={(e) => {
+                    setName(e.target.value);
+                }}
+                />
+                <input type="text" placeholder='Your email' value={email}
+                    onChange={(e) => {
+                        setEmail(e.target.value);
+                    }}
+                />
+                <textarea placeholder={`Hey. I'd like us to work together on...`} value={message}
+                    onChange={(e) => {
+                        setMessage(e.target.value);
+                    }}
+                ></textarea>
+                <button className="btn btn_black" onClick={(e) => sendEmail(e)}>Send message</button>
+            </>
+        ):null}
+        
+        {isSuccess ? (
+            <div className="form_output success" onClick={resetForm}>
+                <p className="paragraph">Message successfully sent! Keep an eye on your emails. I'll be in touch :) </p>
+            </div>
+        ):null}            
+        {error ? (
+            <div className="form_output error" onClick={resetFormResponseState}>
+                <p className="paragraph">Something went wrong. Please try again.</p>
+            </div>
+        ):null} 
     </form>
   )
 }

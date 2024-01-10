@@ -1,0 +1,12 @@
+.form_output {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}

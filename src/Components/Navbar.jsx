@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <img src="/src/assets/logo.svg" alt="Logo" />
+            <Link to="/">
+              <img src="/src/assets/logo.svg" alt="Logo" />
+            </Link>
           </div>
           <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
             <li><Link to="/projects">My projects</Link></li>

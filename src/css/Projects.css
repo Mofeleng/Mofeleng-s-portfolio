@@ -35,3 +35,14 @@
 a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 590px) {
+    h2 span {
+        display: block;
+
+    }
+    h2 .type {
+        margin-left: 0;
+        width: fit-content;
+    }
+}

@@ -46,6 +46,7 @@
 }
 .project img {
     max-width: 100% !important;
+    object-fit: cover;
     height: fit-content;
 }
 .project {

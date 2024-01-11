@@ -2,7 +2,7 @@ import { GraphQLClient, gql } from 'graphql-request'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from './Loader'
-
+import Error from './Error'
 function ProjectsGrid() {
 
     const ENDPOINT = import.meta.env.VITE_GRAPHCMS_ENDPOINT
@@ -61,7 +61,9 @@ function ProjectsGrid() {
         )
     }
     if (error) {
-        return error
+        return (
+            <Error type="Server error" message={"Something went wrong while fetching projects :("} />
+        )
     }
   return (
     <div className="projects_container">

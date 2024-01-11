@@ -63,7 +63,9 @@ function ProjectsList() {
   }
 
   if (error) {
-    return "Something went wrong " + error;
+    return (
+      <Error type="Server error" message={"Something went wrong while fetching projects :("} />
+    )
   }
   return (
     <div className="projects_main">

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/Error.css'
 
-function ErrorDefault({ type, message }) {
+function Error({ type, message }) {
   return (
     <div className="error-container">
         <h2>{ type }</h2>
@@ -11,4 +11,4 @@ function ErrorDefault({ type, message }) {
   )
 }
 
-export default ErrorDefault
+export default Error

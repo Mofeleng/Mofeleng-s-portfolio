@@ -16,7 +16,7 @@ function ContactForm() {
     const [ isSuccess, setIsSuccess ] = useState(null);
     const [ error, setError ] = useState(null);
 
-    const [ btnMsg, setBtnMsg ] = useState('Send email');
+    const [ btnMsg, setBtnMsg ] = useState('Send message');
 
     const SERVICEID = import.meta.env.VITE_EMAILJS_SERVICEID;
     const TEMPLATEID = import.meta.env.VITE_EMAILJS_TEMPLATEID;

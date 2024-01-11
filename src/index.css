@@ -150,7 +150,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+.text_white {
+    color: #fff;
+}
 @media screen and (max-width: 770px) {
     form {
         width: 100%;

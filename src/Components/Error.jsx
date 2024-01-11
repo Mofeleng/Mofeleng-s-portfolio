@@ -6,7 +6,7 @@ function Error({ type, message }) {
   return (
     <div className="error-container">
         <h2>{ type }</h2>
-        <p>{ message }. <Link to={'/'} className='under'>Go home</Link></p>
+        <p>{ message }. <Link to={'/'} className='text_white under'>Go home</Link></p>
   </div>
   )
 }

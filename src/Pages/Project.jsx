@@ -6,6 +6,7 @@ import { useParams, Link } from 'react-router-dom'
 import '../css/Project.css'
 import ContactForm from '../Components/ContactForm'
 import Loader from '../Components/Loader'
+import Error from '../Components/Error'
 
 function Project() {
 
@@ -79,7 +80,9 @@ function Project() {
     )
   }
   if (err) {
-    return err
+    return (
+        <Error type="Server error" message={"Something went wrong while fetching this project :("} />
+    )
   }
 
   return (

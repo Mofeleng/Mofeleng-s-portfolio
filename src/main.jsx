@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import Layout from './Layout'
 import Projects from './Pages/Projects'
 import Project from './Pages/Project'
+import NotFound from './Pages/NotFound'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,6 +26,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/project/:slug' element={
           <Layout>
             <Project />
+          </Layout>
+        } />
+
+        <Route path='*' element={
+          <Layout>
+            <NotFound />
           </Layout>
         } />
       </Routes>

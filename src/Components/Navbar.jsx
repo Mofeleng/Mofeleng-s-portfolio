@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="logo">
             <Link to="/">
-              <img src="logo.svg" alt="Logo" />
+              <img src="https://res.cloudinary.com/dmrrnno8f/image/upload/v1705006464/my%20portfolio%20website/logo.svg" alt="Logo" />
             </Link>
           </div>
           <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>

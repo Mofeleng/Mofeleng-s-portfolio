@@ -13,7 +13,7 @@ function Home() {
       <section id="hero" className="hero">
         <div className="container">
           <div className="hero_content_wrapper">
-            <img src="hero.jpg" alt="Hero image" />
+            <img src="https://res.cloudinary.com/dmrrnno8f/image/upload/v1705006465/my%20portfolio%20website/hero.jpg" alt="Hero image" />
             <span className="label">Mofeleng Shadow Mokgope</span>
             <h1 className="heading">I build seamless web experiences that give your brand the trust and authority it needs to dominate.</h1>
             <p className="paragraph">
@@ -34,22 +34,22 @@ function Home() {
           <div className="tech_stack_container">
             <div className="tech_stack">
               <div className="img_container">
-                <img src={stack_folder_prefix+'html_white'+'.svg'} alt="html logo" />
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/html.svg'} alt="html logo" />
               </div>
               <div className="img_container">
-                <img src={stack_folder_prefix+'css_white'+'.svg'} alt="css logo" />                
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/css.svg'} alt="css logo" />                
               </div>
               <div className="img_container">
-                <img src={stack_folder_prefix+'js'+'.svg'} alt="js logo" />               
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/js.svg'} alt="js logo" />               
               </div>
               <div className="img_container">
-                <img src={stack_folder_prefix+'react'+'.svg'} alt="react js logo" />                
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/react.svg'} alt="react js logo" />                
               </div>
               <div className="img_container">
-                <img src={stack_folder_prefix+'node_white'+'.svg'} alt="node js logo" />                
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/node.svg'} alt="node js logo" />                
               </div>
               <div className="img_container">
-                <img src={stack_folder_prefix+'github_white'+'.svg'} alt="github logo" />               
+                <img src={'https://res.cloudinary.com/dmrrnno8f/image/upload/v1705007060/my%20portfolio%20website/github.svg'} alt="github logo" />               
               </div>
             </div>
           </div>

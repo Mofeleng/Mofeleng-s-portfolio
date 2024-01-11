@@ -16,6 +16,8 @@ function ContactForm() {
     const [ isSuccess, setIsSuccess ] = useState(null);
     const [ error, setError ] = useState(null);
 
+    const [ btnMsg, setBtnMsg ] = useState('Send email');
+
     const SERVICEID = import.meta.env.VITE_EMAILJS_SERVICEID;
     const TEMPLATEID = import.meta.env.VITE_EMAILJS_TEMPLATEID;
     const PUBLICKEY = import.meta.env.VITE_EMAILJS_PUBLICKEY;
@@ -37,6 +39,8 @@ function ContactForm() {
             return setEmailError("Please use a valid email address");
         }
 
+        setBtnMsg('Sending...')
+        
         const templateParams = {
             reply_to: email,
             from_name: name,
@@ -91,7 +95,7 @@ function ContactForm() {
                     }}
                 ></textarea>
                 <span className="text_red">{messageError}</span><br></br>
-                <button className="btn btn_black" onClick={(e) => sendEmail(e)}>Send message</button>
+                <button className="btn btn_black" onClick={(e) => sendEmail(e)}>{ btnMsg }</button>
             </>
         ):(<></>)}
         

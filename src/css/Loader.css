@@ -1,0 +1,36 @@
+.page-loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent; /* Change the background color as needed */
+  }
+  
+  .loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #fff; /* Set the color of the shiny effect */
+    animation: spin 1s linear infinite, shine 2s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes shine {
+    0%,
+    100% {
+      background-position: -100% 0;
+    }
+    50% {
+      background-position: 200% 0;
+    }
+  }
+  

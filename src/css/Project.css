@@ -20,9 +20,9 @@
     margin-top: 40px;
 }
 .coverimage_projects img {
-    width: 100%;
-    height: fit-content;
-    object-fit: cover;
+    max-width: 100% !important;
+    object-fit: contain;
+    max-height: fit-content;
 }
 .under:hover {
     text-decoration: underline;

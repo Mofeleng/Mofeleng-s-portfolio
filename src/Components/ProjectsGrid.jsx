@@ -1,6 +1,7 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Loader from './Loader'
 
 function ProjectsGrid() {
 
@@ -55,7 +56,9 @@ function ProjectsGrid() {
     }, [])
 
     if (loading) {
-        return "Loading"
+        return (
+            <Loader />
+        )
     }
     if (error) {
         return error

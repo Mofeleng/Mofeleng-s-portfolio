@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GraphQLClient, gql } from 'graphql-request'
+import Loader from './Loader';
 
 function ProjectsList() {
   const ENDPOINT = import.meta.env.VITE_GRAPHCMS_ENDPOINT;
@@ -41,7 +42,6 @@ function ProjectsList() {
         setError(null);
       }
     } catch (error) {
-      console.log("Something went wrong", error)
       setError("Something went wrong while fetching projects");
       setLoading(false);
     }
@@ -57,7 +57,9 @@ function ProjectsList() {
   }, []);
 
   if (loading) {
-    return "Loading";
+    return (
+      <Loader />
+    )
   }
 
   if (error) {

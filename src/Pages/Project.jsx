@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import '../css/Project.css'
 import ContactForm from '../Components/ContactForm'
+import Loader from '../Components/Loader'
 
 function Project() {
 
@@ -73,7 +74,9 @@ function Project() {
   }, [])
 
   if (loading) {
-    return "Loading"
+    return (
+        <Loader />
+    )
   }
   if (err) {
     return err

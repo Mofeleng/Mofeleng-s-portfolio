@@ -42,7 +42,7 @@ function ProjectsGrid() {
 
         } catch (error) {
             setLoading(false)
-            setError("Something went wrong while fetching projects")
+            setError("Something went wrong while fetching projects :(")
         }
         
     }
@@ -62,7 +62,7 @@ function ProjectsGrid() {
     }
     if (error) {
         return (
-            <Error type="Server error" message={"Something went wrong while fetching projects :("} />
+            <Error type="Server error" message={error} />
         )
     }
   return (

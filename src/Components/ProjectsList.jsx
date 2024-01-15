@@ -42,7 +42,7 @@ function ProjectsList() {
         setError(null);
       }
     } catch (error) {
-      setError("Something went wrong while fetching projects");
+      setError("Something went wrong while fetching projects :(");
       setLoading(false);
     }
   }
@@ -64,7 +64,7 @@ function ProjectsList() {
 
   if (error) {
     return (
-      <Error type="Server error" message={"Something went wrong while fetching projects :("} />
+      <Error type="Server error" message={error} />
     )
   }
   return (

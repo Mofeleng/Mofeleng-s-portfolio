@@ -61,7 +61,7 @@ function Project() {
         }
     } catch (error) {
         setLoading(false)
-        setErr("Something went wrong while fetching this project")
+        setErr("Something went wrong while fetching this project :(")
     }
   }
 
@@ -81,7 +81,7 @@ function Project() {
   }
   if (err) {
     return (
-        <Error type="Server error" message={"Something went wrong while fetching this project :("} />
+        <Error type="Server error" message={err} />
     )
   }
 

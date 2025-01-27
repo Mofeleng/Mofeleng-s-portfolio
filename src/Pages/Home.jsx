@@ -14,9 +14,9 @@ function Home() {
           <div className="hero_content_wrapper">
             <img src={cloudinary_folder_prefix + "hero.jpg"} alt="Hero image" />
             <span className="label">Mofeleng Shadow Mokgope</span>
-            <h1 className="heading">I build seamless web experiences that give your brand the trust and authority it needs to dominate.</h1>
+            <h1 className="heading">Crafting seamless web solutions that solve real-world problems.</h1>
             <p className="paragraph">
-            My name is Mofeleng Shadow Mokgope, I am a fullstack web developer and a final year BCom student. I help brands build websites that make them memorable.
+            Hi, I’m Mofeleng Shadow Mokgope, a full-stack web developer and aspiring Mathematics & Computer Science student. I’m passionate about building innovative web experiences and pursuing a role in data-driven problem-solving to create impactful solutions.
             </p>
             <div className="buttons">
               <Link to={'https://github.com/Mofeleng'} target='blank' className='btn btn_wider btn_accent btn_rounded'>My Github</Link>

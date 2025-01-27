@@ -1,5 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request'
-import React from 'react'
+import React, { useRef } from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
@@ -12,7 +12,7 @@ function Project() {
 
   const { slug } = useParams()
   const ENDPOINT = import.meta.env.VITE_GRAPHCMS_ENDPOINT
-
+  const topRef = useRef(null)
   const [ loading, setLoading ] = useState(true)
   const [ err, setErr ] = useState(null)
 
@@ -88,6 +88,7 @@ function Project() {
   return (
     <>
         <section id="hero_project">
+            <div ref={topRef}></div>
             <div className="container">
                 <span className="label">{ project.type }</span>
                 <h1 className="heading start">{ project.name }</h1>

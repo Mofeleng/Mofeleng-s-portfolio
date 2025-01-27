@@ -20,6 +20,7 @@
     margin-top: 40px;
 }
 .coverimage_projects img {
+    width: 100%;
     max-width: 100% !important;
     object-fit: contain;
     max-height: fit-content;

@@ -21,6 +21,10 @@
     margin-left: 0;
     background-color: orange;
 }
+.next {
+    background-color: black;
+    color: #fff;
+}
 .react {
     background-color: lightskyblue;
 }
